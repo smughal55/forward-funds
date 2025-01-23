@@ -5,7 +5,7 @@ import {Script} from "forge-std/Script.sol";
 import {HelperConfig} from "./HelperConfig.s.sol";
 import {Distributor} from "../src/Distributor.sol";
 
-contract DeployVault is Script {
+contract DeployDistributor is Script {
     function run() external returns (Distributor, HelperConfig) {
         HelperConfig helperConfig = new HelperConfig(); // This comes with our mocks!
         (

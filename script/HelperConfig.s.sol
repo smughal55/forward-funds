@@ -59,8 +59,8 @@ contract HelperConfig is Script {
         // _recipients[4] = 0x976EA74026E726554dB657fA54763abd0C3a0aa9;
 
         anvilNetworkConfig = NetworkConfig({
-            forwarder: 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266,
-            operator: 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266,
+            forwarder: 0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496,
+            operator: 0x7FA9385bE102ac3EAc297483Dd6233D62b3e1496,
             underlyingAsset: address(underlyingAssetMock),
             deployerKey: DEFAULT_ANVIL_PRIVATE_KEY
         });

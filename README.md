@@ -43,6 +43,14 @@ forge install
 forge build
 ```
 
+### 4. Run Tests
+
+Execute tests to ensure the contract functions as expected.
+
+```bash
+forge test
+```
+
 ---
 
 ## Deployment Instructions
@@ -180,6 +188,7 @@ The following steps demonstrate how to transfer the admin role to a new address 
 - **Splits Validation**: Ensure splits sum to 100 before calling `forward_funds`.
 - **Batch Size**: The default batch size is `100` and can be adjusted as needed.
 - **Security**: Validate recipients and roles to prevent misuse or loss of funds.
+- **Amemdments**: The forward_funds function has been updated to include a startIndex parameter to allow for batch processing which is more efficient for large recipient lists as it's less likely to run into gas limits.
 
 ---
 
